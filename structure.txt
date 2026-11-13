@@ -1,0 +1,16 @@
+mspsys.github.io/
+├── index.html
+├── css/
+│   └── style.css          <-- Global layout, typography, colors, header/footer
+├── js/
+│   └── main.js            <-- Global navigation or theme scripts
+├── img/
+│   └── avatar.png         <-- Site-wide logo or profile image
+└── plugins/
+    ├── maxlife-comments/
+    │   ├── index.html
+    │   ├── img/           <-- Screenshots specific to MaxLife Comments
+    │   └── demo.js        <-- (Optional) Script used only on this page
+    └── maxlife-post-scripts/
+        ├── index.html
+        └── img/           <-- Screenshots specific to MaxLife Post Scripts
