@@ -3,45 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MaxLife Post Scripts | mspsys</title>
+  <title data-en="MaxLife Post Scripts | MaxLife" data-ko="MaxLife Post Scripts | MaxLife">MaxLife Post Scripts | MaxLife</title>
+  <meta name="description" content="Per-post CSS, JavaScript and CDN scripts for WordPress.">
+  <script>
+    /* Language before the page is drawn: saved choice, else the browser's language */
+    (function () { var l; try { l = localStorage.getItem('lang'); } catch (e) {}
+      if (l !== 'ko' && l !== 'en') l = /^ko\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || '') ? 'ko' : 'en';
+      document.documentElement.lang = l; })();
+  </script>
+  <link rel="icon" href="../../img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-  <div class="site-container">
-    <nav class="breadcrumb">
-      <a href="../../">← Back to All Plugins</a>
-    </nav>
-
-    <header class="site-header" style="margin-top: 20px;">
-      <div class="plugin-meta" style="justify-content: center; gap: 10px; margin-bottom: 10px;">
-        <span class="badge">v1.1.0</span>
-        <span class="category">Asset Management</span>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../"><img src="../../img/logo.svg" alt="" width="34" height="34">MaxLife</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="../../" aria-current="page"><span lang="en">Plugins</span><span lang="ko">플러그인</span></a>
+        <a href="https://maxlife.blog/" target="_blank" rel="noopener">maxlife.blog</a>
+        <a href="https://hiai.trade/" target="_blank" rel="noopener">hiai.trade</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language / 언어">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ko">KO</button>
       </div>
-      <h1>MaxLife Post Scripts</h1>
-      <p class="tagline">Per-post custom CSS, JavaScript, and external CDN script injection.</p>
-    </header>
+    </div>
+  </header>
 
-    <main class="plugin-detail-content">
-      <section class="detail-box" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; margin-bottom: 30px;">
-        <h3 style="color: #fff; margin-bottom: 15px;">Key Features</h3>
-        <ul style="color: var(--text-muted); padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
-          <li><strong>VS Code-Style Editor:</strong> Clean, dedicated code boxes for post-specific CSS and JavaScript injection.</li>
-          <li><strong>External CDN Support:</strong> Easily include libraries (like Chart.js or D3) via CDN URLs scoped directly to the posts that need them.</li>
-          <li><strong>Ordered Loading:</strong> External scripts load in precise order without cluttering global queues.</li>
-          <li><strong>Seamless Migration:</strong> Drop-in replacement for Simple CSS — nothing to rewrite or copy over.</li>
-          <li><strong>Lightweight Performance:</strong> No jQuery requirement and zero extra footprint on pages that don't use it.</li>
-        </ul>
-      </section>
+  <main class="wrap">
+    <nav class="crumb"><a href="../../"><span lang="en">← All plugins</span><span lang="ko">← 플러그인 전체</span></a></nav>
 
-      <div class="plugin-links" style="justify-content: center;">
-        <a href="https://github.com/mspsys/maxlife-post-scripts/releases/tag/v1.1.0" class="btn primary" target="_blank" rel="noopener noreferrer">Download maxlife-post-scripts-1.1.0.zip</a>
-        <a href="https://github.com/mspsys/maxlife-post-scripts" class="btn secondary" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+    <section class="detail-hero">
+      <div class="box-col">
+    <div class="gbox gbox--scripts" aria-hidden="true">
+      <div class="gbox-turn"><div class="gbox-body" aria-hidden="true">
+        <div class="face f-front"><div class="cover">
+          <div class="cover-band"><img src="../../img/logo.svg" alt="">MaxLife<span class="plat">WordPress</span></div>
+          <div class="cover-art">
+          <svg viewBox="0 0 200 150" aria-hidden="true">
+            <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
+            <rect x="12" y="16" width="176" height="118" rx="10" fill="#1e1e1e" stroke="#3c3c46" stroke-width="2"/>
+            <rect x="12" y="16" width="176" height="20" rx="10" fill="#2d2d36"/>
+            <rect x="12" y="28" width="176" height="8" fill="#2d2d36"/>
+            <circle cx="26" cy="26" r="4" fill="#ff5f57"/><circle cx="39" cy="26" r="4" fill="#febc2e"/><circle cx="52" cy="26" r="4" fill="#8d5eff"/>
+            <rect x="70" y="22" width="44" height="8" rx="4" fill="#3c3c46"/>
+            <g font-family="Consolas, Menlo, monospace" font-size="8" fill="#6b6b78"><text x="22" y="52">1</text><text x="22" y="66">2</text><text x="22" y="80">3</text><text x="22" y="94">4</text><text x="22" y="108">5</text><text x="22" y="122">6</text></g>
+            <rect x="36" y="46" width="22" height="6" rx="3" fill="#c586c0"/><rect x="62" y="46" width="34" height="6" rx="3" fill="#9cdcfe"/><rect x="100" y="46" width="14" height="6" rx="3" fill="#d4d4d4"/>
+            <rect x="46" y="60" width="28" height="6" rx="3" fill="#dcdcaa"/><rect x="78" y="60" width="44" height="6" rx="3" fill="#ce9178"/>
+            <rect x="46" y="74" width="18" height="6" rx="3" fill="#569cd6"/><rect x="68" y="74" width="30" height="6" rx="3" fill="#9cdcfe"/><rect x="102" y="74" width="22" height="6" rx="3" fill="#b5cea8" opacity="0"/>
+            <rect x="46" y="88" width="40" height="6" rx="3" fill="#dcdcaa"/><rect x="90" y="88" width="20" height="6" rx="3" fill="#ce9178"/>
+            <rect x="36" y="102" width="12" height="6" rx="3" fill="#d4d4d4"/>
+            <rect x="36" y="116" width="30" height="6" rx="3" fill="#c586c0"/><rect x="70" y="116" width="26" height="6" rx="3" fill="#9cdcfe"/>
+            <text x="150" y="112" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="46" fill="url(#sg)" opacity=".95">&lt;/&gt;</text>
+          </svg>
+          </div>
+          <div class="cover-title"><span class="t1">MaxLife</span><span class="t2">Post Scripts</span></div>
+          <div class="cover-foot">
+            <div class="rating"><b>A</b>ALL SITES</div>
+            <div class="chips"><span class="chip">CSS + JS</span><span class="chip">NO jQUERY</span><span class="chip">CDN READY</span></div>
+          </div>
+        </div></div>
+        <div class="face f-back"><div class="back">
+          <h4>Interactive posts</h4>
+          <ul><li><span lang="en">Per-post CSS and JavaScript boxes</span><span lang="ko">글마다 CSS·JavaScript 상자</span></li><li><span lang="en">VS Code-style editor with syntax colors</span><span lang="ko">VS Code 스타일 에디터 (문법 색상)</span></li><li><span lang="en">CDN libraries (Chart.js, D3 …) loaded in order</span><span lang="ko">CDN 라이브러리(Chart.js, D3 …)를 순서대로 로드</span></li><li><span lang="en">Takes over Simple CSS — nothing to copy</span><span lang="ko">Simple CSS 그대로 이어받기 — 옮길 것 없음</span></li></ul>
+          <div class="req"><b><span lang="en">System requirements</span><span lang="ko">권장 사양</span></b><br>WordPress 4.9+ · PHP 7.0+<br>v1.1.0 · GPLv2</div>
+        </div></div>
+        <div class="face f-left"><div class="spine"><img src="../../img/logo.svg" alt=""><span class="st">Post Scripts</span><span class="sv">v1.1.0</span></div></div>
+        <div class="face f-right"><div class="spine"><img src="../../img/logo.svg" alt=""><span class="st">MaxLife</span><span class="sv">WP</span></div></div>
+        <div class="face f-top"></div>
+        <div class="face f-bottom"></div>
+      </div></div>
+    </div>
+        <div class="views" role="radiogroup" aria-label="View"><input type="radio" name="view" id="v-turn" checked><label for="v-turn"><span lang="en">Turn</span><span lang="ko">회전</span></label><input type="radio" name="view" id="v-front"><label for="v-front"><span lang="en">Front</span><span lang="ko">앞면</span></label><input type="radio" name="view" id="v-back"><label for="v-back"><span lang="en">Back</span><span lang="ko">뒷면</span></label><input type="radio" name="view" id="v-spine"><label for="v-spine"><span lang="en">Spine</span><span lang="ko">옆면</span></label></div>
       </div>
-    </main>
+      <div>
+        <h1>MaxLife Post Scripts</h1>
+        <div class="meta">v1.1.0 · <span lang="en">Per-post CSS &amp; JavaScript</span><span lang="ko">글별 CSS · JavaScript</span></div>
+        <p class="lead"><span lang="en">Per-post custom CSS, JavaScript, and external CDN scripts — the easiest way to build interactive posts in the Classic Editor.</span><span lang="ko">글마다 CSS, JavaScript, 외부 CDN 스크립트 — 클래식 에디터에서 인터랙티브 글을 만드는 가장 쉬운 방법.</span></p>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://github.com/mspsys/maxlife-post-scripts/releases/latest" target="_blank" rel="noopener"><span lang="en">Download</span><span lang="ko">다운로드</span> maxlife-post-scripts-1.1.0.zip</a>
+          <a class="btn btn-ghost" href="https://github.com/mspsys/maxlife-post-scripts" target="_blank" rel="noopener"><span lang="en">GitHub repository</span><span lang="ko">GitHub 저장소</span></a>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer" style="margin-top: 60px;">
-      <p>&copy; 2026 mspsys.</p>
-    </footer>
-  </div>
+    <section class="section">
+      <h2 class="mx-h"><span lang="en">Key features</span><span lang="ko">주요 기능</span></h2>
+      <ul class="features">
+        <li><strong><span lang="en">VS Code-style editor</span><span lang="ko">VS Code 스타일 에디터</span>:</strong> <span lang="en">Dedicated code boxes for post-specific CSS and JavaScript, with line numbers and syntax colors.</span><span lang="ko">글마다 CSS와 JavaScript를 넣는 전용 코드 상자 — 줄 번호와 문법 색상 포함.</span></li>
+        <li><strong><span lang="en">External CDN support</span><span lang="ko">CDN 라이브러리</span>:</strong> <span lang="en">Include libraries like Chart.js or D3 by URL, only on the posts that need them.</span><span lang="ko">Chart.js, D3 같은 라이브러리를 주소로 추가 — 필요한 글에서만 불러옵니다.</span></li>
+        <li><strong><span lang="en">Ordered loading</span><span lang="ko">순서대로 로드</span>:</strong> <span lang="en">External scripts load in the order you list them, before the post’s own JavaScript.</span><span lang="ko">외부 스크립트가 적은 순서대로, 글의 JavaScript보다 먼저 로드됩니다.</span></li>
+        <li><strong><span lang="en">Seamless migration</span><span lang="ko">그대로 이어받기</span>:</strong> <span lang="en">Takes over Simple CSS’s per-post CSS — nothing to rewrite or copy over.</span><span lang="ko">Simple CSS의 글별 CSS를 그대로 이어받습니다 — 다시 쓰거나 옮길 것이 없습니다.</span></li>
+        <li><strong><span lang="en">Lightweight</span><span lang="ko">가벼움</span>:</strong> <span lang="en">No jQuery, and nothing extra on pages that don’t use it.</span><span lang="ko">jQuery 없음, 사용하지 않는 페이지엔 아무것도 추가되지 않습니다.</span></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="mx-h"><span lang="en">Install</span><span lang="ko">설치</span></h2>
+      <table class="specs">
+        <tr><th><span lang="en">Requires</span><span lang="ko">필요 사양</span></th><td><span lang="en">WordPress 4.9+ · PHP 7.0+</span><span lang="ko">WordPress 4.9 이상 · PHP 7.0 이상</span></td></tr>
+        <tr><th><span lang="en">Install</span><span lang="ko">설치 방법</span></th><td><span lang="en">Plugins → Add New → Upload Plugin → choose the ZIP → Activate</span><span lang="ko">플러그인 → 새로 추가 → 플러그인 업로드 → ZIP 선택 → 활성화</span></td></tr>
+        <tr><th><span lang="en">Who sees the boxes</span><span lang="ko">사용 권한</span></th><td><span lang="en">Administrators only (users who can post unfiltered HTML)</span><span lang="ko">관리자만 (필터 없는 HTML을 쓸 수 있는 사용자)</span></td></tr>
+        <tr><th><span lang="en">License</span><span lang="ko">라이선스</span></th><td><span lang="en">GPLv2 or later</span><span lang="ko">GPLv2 이상</span></td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span class="js-year">2026</span> MaxLife. <span lang="en">Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.</span><span lang="ko"><a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>에서 호스팅됩니다.</span></p>
+      <div class="links">
+        <a href="https://maxlife.blog/" target="_blank" rel="noopener">maxlife.blog</a>
+        <a href="https://hiai.trade/" target="_blank" rel="noopener">hiai.trade</a>
+        <a href="https://github.com/mspsys" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
 </body>
 </html>

@@ -3,53 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mspsys | WordPress Plugins</title>
+  <title data-en="MaxLife | WordPress Plugins" data-ko="MaxLife | 워드프레스 플러그인">MaxLife | WordPress Plugins</title>
+  <meta name="description" content="Lightweight, zero-bloat WordPress plugins by MaxLife.">
+  <script>
+    /* Language before the page is drawn: saved choice, else the browser's language */
+    (function () { var l; try { l = localStorage.getItem('lang'); } catch (e) {}
+      if (l !== 'ko' && l !== 'en') l = /^ko\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || '') ? 'ko' : 'en';
+      document.documentElement.lang = l; })();
+  </script>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="site-container">
-    <header class="site-header">
-      <h1>MaxLife</h1>
-      <p class="tagline">Lightweight, zero-bloat WordPress plugins built for speed and administrative control.</p>
-    </header>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href=""><img src="img/logo.svg" alt="" width="34" height="34">MaxLife</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="" aria-current="page"><span lang="en">Plugins</span><span lang="ko">플러그인</span></a>
+        <a href="https://maxlife.blog/" target="_blank" rel="noopener">maxlife.blog</a>
+        <a href="https://hiai.trade/" target="_blank" rel="noopener">hiai.trade</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language / 언어">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ko">KO</button>
+      </div>
+    </div>
+  </header>
 
-    <main class="plugin-grid">
-      <!-- Plugin 1 -->
-      <article class="plugin-card">
-        <div class="plugin-meta">
-          <span class="badge">v1.0.0</span>
-          <span class="category">Comments &amp; Interaction</span>
-        </div>
+  <main class="wrap">
+    <section class="hero">
+      <h1><span lang="en">WordPress plugins, <span class="grad">built light.</span></span><span lang="ko">가볍게 만든 <span class="grad">워드프레스 플러그인</span></span></h1>
+      <p><span lang="en">Lightweight, zero-bloat WordPress plugins built for speed and administrative control.</span><span lang="ko">속도와 관리 편의를 위해 만든, 군더더기 없는 가벼운 워드프레스 플러그인입니다.</span></p>
+    </section>
+
+    <section class="stage" aria-label="Plugins">
+      <article class="showcase">
+    <a class="gbox gbox--comments" href="plugins/maxlife-comments/" aria-label="MaxLife Comments">
+      <div class="gbox-turn"><div class="gbox-body" aria-hidden="true">
+        <div class="face f-front"><div class="cover">
+          <div class="cover-band"><img src="img/logo.svg" alt="">MaxLife<span class="plat">WordPress</span></div>
+          <div class="cover-art">
+          <svg viewBox="0 0 200 150" aria-hidden="true">
+            <defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#00a2ff"/></linearGradient></defs>
+            <g transform="rotate(-6 100 75)">
+              <rect x="22" y="14" width="120" height="86" rx="14" fill="#fff"/>
+              <path d="M44 98 L40 122 L66 100 Z" fill="#fff"/>
+              <rect x="34" y="26" width="96" height="62" rx="6" fill="url(#cg)"/>
+              <circle cx="110" cy="42" r="8" fill="#ffd166"/>
+              <path d="M34 82 L62 52 L82 70 L96 58 L130 88 L34 88 Z" fill="#fff" opacity=".9"/>
+            </g>
+            <g transform="rotate(5 150 100)">
+              <rect x="112" y="72" width="74" height="50" rx="12" fill="#2b1f7a" stroke="#fff" stroke-width="3"/>
+              <path d="M170 120 L176 138 L158 121 Z" fill="#2b1f7a" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+              <rect x="124" y="85" width="50" height="5" rx="2.5" fill="#fff" opacity=".9"/>
+              <rect x="124" y="96" width="36" height="5" rx="2.5" fill="#fff" opacity=".6"/>
+              <rect x="124" y="107" width="44" height="5" rx="2.5" fill="#7dd3fc"/>
+            </g>
+            <g transform="translate(150 22)">
+              <circle r="17" fill="#fff"/>
+              <circle r="13" fill="none" stroke="#7c3aed" stroke-width="3"/>
+              <path d="M0 -8 V0 L6 4" stroke="#7c3aed" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          </div>
+          <div class="cover-title"><span class="t1">MaxLife</span><span class="t2">Comments</span></div>
+          <div class="cover-foot">
+            <div class="rating"><b>A</b>ALL SITES</div>
+            <div class="chips"><span class="chip">IMAGES</span><span class="chip">SELF-DELETE</span><span class="chip">KO · EN</span></div>
+          </div>
+        </div></div>
+        <div class="face f-back"><div class="back">
+          <h4>Comments, upgraded</h4>
+          <ul><li><span lang="en">Images in comments and replies, held for your approval</span><span lang="ko">댓글·답글에 이미지 첨부 — 관리자 승인 후 공개</span></li><li><span lang="en">Commenters can delete their own comment for 12 hours</span><span lang="ko">작성자가 12시간 동안 자기 댓글 삭제 가능</span></li><li><span lang="en">Clickable links in your own comments only</span><span lang="ko">관리자 댓글의 주소만 링크로 표시</span></li><li><span lang="en">Korean and English, cache-friendly, no settings page</span><span lang="ko">한국어·영어, 캐시 호환, 설정 페이지 없음</span></li></ul>
+          <div class="req"><b><span lang="en">System requirements</span><span lang="ko">권장 사양</span></b><br>WordPress 5.3+ · PHP 7.0+<br>v1.0.0 · GPLv2</div>
+        </div></div>
+        <div class="face f-left"><div class="spine"><img src="img/logo.svg" alt=""><span class="st">Comments</span><span class="sv">v1.0.0</span></div></div>
+        <div class="face f-right"><div class="spine"><img src="img/logo.svg" alt=""><span class="st">MaxLife</span><span class="sv">WP</span></div></div>
+        <div class="face f-top"></div>
+        <div class="face f-bottom"></div>
+      </div></div>
+    </a>
         <h2>MaxLife Comments</h2>
-        <p class="plugin-desc">
-          Extends default WordPress comments with secure image uploads held for approval, 12-hour self-deletion for commenters, and author-only clickable links. Bilingual (English/Korean) and fully cache-friendly with no heavy settings page.
-        </p>
-        <div class="plugin-links">
-          <a href="plugins/maxlife-comments/" class="btn secondary">View Details</a>
-          <a href="https://github.com/mspsys/maxlife-comments-1.0.0/releases/tag/v1.0.0" class="btn primary" target="_blank" rel="noopener noreferrer">Download ZIP</a>
+        <div class="meta">v1.0.0 · <span lang="en">Comments &amp; Interaction</span><span lang="ko">댓글 · 소통</span></div>
+        <p><span lang="en">Image uploads held for your approval, 12-hour self-delete for commenters, and clickable links only in your own comments. Bilingual, cache-friendly, no settings page.</span><span lang="ko">댓글 이미지 첨부(관리자 승인 후 공개), 작성자의 12시간 내 댓글 삭제, 관리자 댓글만 링크 표시. 한국어·영어 지원, 캐시 호환, 설정 페이지 없음.</span></p>
+        <div class="btns">
+          <a class="btn btn-ghost" href="plugins/maxlife-comments/"><span lang="en">Details</span><span lang="ko">자세히 보기</span></a>
+          <a class="btn btn-primary" href="https://github.com/mspsys/maxlife-comments/releases/latest" target="_blank" rel="noopener"><span lang="en">Download ZIP</span><span lang="ko">ZIP 다운로드</span></a>
         </div>
       </article>
 
-      <!-- Plugin 2 -->
-      <article class="plugin-card">
-        <div class="plugin-meta">
-          <span class="badge">v1.1.0</span>
-          <span class="category">Asset Management</span>
-        </div>
+      <article class="showcase">
+    <a class="gbox gbox--scripts" href="plugins/maxlife-post-scripts/" aria-label="MaxLife Post Scripts">
+      <div class="gbox-turn"><div class="gbox-body" aria-hidden="true">
+        <div class="face f-front"><div class="cover">
+          <div class="cover-band"><img src="img/logo.svg" alt="">MaxLife<span class="plat">WordPress</span></div>
+          <div class="cover-art">
+          <svg viewBox="0 0 200 150" aria-hidden="true">
+            <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
+            <rect x="12" y="16" width="176" height="118" rx="10" fill="#1e1e1e" stroke="#3c3c46" stroke-width="2"/>
+            <rect x="12" y="16" width="176" height="20" rx="10" fill="#2d2d36"/>
+            <rect x="12" y="28" width="176" height="8" fill="#2d2d36"/>
+            <circle cx="26" cy="26" r="4" fill="#ff5f57"/><circle cx="39" cy="26" r="4" fill="#febc2e"/><circle cx="52" cy="26" r="4" fill="#8d5eff"/>
+            <rect x="70" y="22" width="44" height="8" rx="4" fill="#3c3c46"/>
+            <g font-family="Consolas, Menlo, monospace" font-size="8" fill="#6b6b78"><text x="22" y="52">1</text><text x="22" y="66">2</text><text x="22" y="80">3</text><text x="22" y="94">4</text><text x="22" y="108">5</text><text x="22" y="122">6</text></g>
+            <rect x="36" y="46" width="22" height="6" rx="3" fill="#c586c0"/><rect x="62" y="46" width="34" height="6" rx="3" fill="#9cdcfe"/><rect x="100" y="46" width="14" height="6" rx="3" fill="#d4d4d4"/>
+            <rect x="46" y="60" width="28" height="6" rx="3" fill="#dcdcaa"/><rect x="78" y="60" width="44" height="6" rx="3" fill="#ce9178"/>
+            <rect x="46" y="74" width="18" height="6" rx="3" fill="#569cd6"/><rect x="68" y="74" width="30" height="6" rx="3" fill="#9cdcfe"/><rect x="102" y="74" width="22" height="6" rx="3" fill="#b5cea8" opacity="0"/>
+            <rect x="46" y="88" width="40" height="6" rx="3" fill="#dcdcaa"/><rect x="90" y="88" width="20" height="6" rx="3" fill="#ce9178"/>
+            <rect x="36" y="102" width="12" height="6" rx="3" fill="#d4d4d4"/>
+            <rect x="36" y="116" width="30" height="6" rx="3" fill="#c586c0"/><rect x="70" y="116" width="26" height="6" rx="3" fill="#9cdcfe"/>
+            <text x="150" y="112" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="46" fill="url(#sg)" opacity=".95">&lt;/&gt;</text>
+          </svg>
+          </div>
+          <div class="cover-title"><span class="t1">MaxLife</span><span class="t2">Post Scripts</span></div>
+          <div class="cover-foot">
+            <div class="rating"><b>A</b>ALL SITES</div>
+            <div class="chips"><span class="chip">CSS + JS</span><span class="chip">NO jQUERY</span><span class="chip">CDN READY</span></div>
+          </div>
+        </div></div>
+        <div class="face f-back"><div class="back">
+          <h4>Interactive posts</h4>
+          <ul><li><span lang="en">Per-post CSS and JavaScript boxes</span><span lang="ko">글마다 CSS·JavaScript 상자</span></li><li><span lang="en">VS Code-style editor with syntax colors</span><span lang="ko">VS Code 스타일 에디터 (문법 색상)</span></li><li><span lang="en">CDN libraries (Chart.js, D3 …) loaded in order</span><span lang="ko">CDN 라이브러리(Chart.js, D3 …)를 순서대로 로드</span></li><li><span lang="en">Takes over Simple CSS — nothing to copy</span><span lang="ko">Simple CSS 그대로 이어받기 — 옮길 것 없음</span></li></ul>
+          <div class="req"><b><span lang="en">System requirements</span><span lang="ko">권장 사양</span></b><br>WordPress 4.9+ · PHP 7.0+<br>v1.1.0 · GPLv2</div>
+        </div></div>
+        <div class="face f-left"><div class="spine"><img src="img/logo.svg" alt=""><span class="st">Post Scripts</span><span class="sv">v1.1.0</span></div></div>
+        <div class="face f-right"><div class="spine"><img src="img/logo.svg" alt=""><span class="st">MaxLife</span><span class="sv">WP</span></div></div>
+        <div class="face f-top"></div>
+        <div class="face f-bottom"></div>
+      </div></div>
+    </a>
         <h2>MaxLife Post Scripts</h2>
-        <p class="plugin-desc">
-          Allows administrators to apply post-specific CSS and JavaScript with an integrated code editor layout. Supports loading external CDN scripts in order per post without loading jQuery or cluttering global queues.
-        </p>
-        <div class="plugin-links">
-          <a href="plugins/maxlife-post-scripts/" class="btn secondary">View Details</a>
-          <a href="https://github.com/mspsys/maxlife-post-scripts/releases/tag/v1.1.0" class="btn primary" target="_blank" rel="noopener noreferrer">Download ZIP</a>
+        <div class="meta">v1.1.0 · <span lang="en">Per-post CSS &amp; JavaScript</span><span lang="ko">글별 CSS · JavaScript</span></div>
+        <p><span lang="en">Per-post CSS and JavaScript with a VS Code-style editor. Load CDN libraries in order, only on the posts that need them — no jQuery, nothing extra on other pages.</span><span lang="ko">글마다 CSS와 JavaScript를 넣는 VS Code 스타일 에디터. CDN 라이브러리를 필요한 글에서만 순서대로 불러옵니다 — jQuery 없음, 다른 페이지엔 아무것도 추가되지 않습니다.</span></p>
+        <div class="btns">
+          <a class="btn btn-ghost" href="plugins/maxlife-post-scripts/"><span lang="en">Details</span><span lang="ko">자세히 보기</span></a>
+          <a class="btn btn-primary" href="https://github.com/mspsys/maxlife-post-scripts/releases/latest" target="_blank" rel="noopener"><span lang="en">Download ZIP</span><span lang="ko">ZIP 다운로드</span></a>
         </div>
       </article>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 MaxLife. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</p>
-    </footer>
-  </div>
+    <section class="section">
+      <h2 class="mx-h"><span lang="en">Also by MaxLife</span><span lang="ko">MaxLife의 다른 사이트</span></h2>
+      <div class="cards">
+        <div class="card">
+          <h3>maxlife.blog</h3>
+          <p><span lang="en">The blog where these plugins are made and used every day.</span><span lang="ko">이 플러그인들이 만들어지고 매일 쓰이는 블로그입니다.</span></p>
+          <a class="more" href="https://maxlife.blog/" target="_blank" rel="noopener"><span lang="en">Visit maxlife.blog →</span><span lang="ko">maxlife.blog 방문 →</span></a>
+        </div>
+        <div class="card">
+          <h3>HI! AI.TRADE</h3>
+          <p><span lang="en">A free market dashboard with AI market briefs — stocks, crypto and commodities in one place.</span><span lang="ko">무료 마켓 대시보드와 AI 시장 브리핑 — 주식, 코인, 원자재를 한곳에서.</span></p>
+          <a class="more" href="https://hiai.trade/" target="_blank" rel="noopener"><span lang="en">Visit hiai.trade →</span><span lang="ko">hiai.trade 방문 →</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span class="js-year">2026</span> MaxLife. <span lang="en">Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.</span><span lang="ko"><a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>에서 호스팅됩니다.</span></p>
+      <div class="links">
+        <a href="https://maxlife.blog/" target="_blank" rel="noopener">maxlife.blog</a>
+        <a href="https://hiai.trade/" target="_blank" rel="noopener">hiai.trade</a>
+        <a href="https://github.com/mspsys" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
